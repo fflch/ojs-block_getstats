@@ -20,7 +20,7 @@ class GetStatsBlockPlugin extends BlockPlugin {
    * enable and disable plugins.
    */
 	public function getDisplayName() {
-		return 'Tutorial Example';
+		return 'Plugin to display statistics from journals';
 	}
 
 	/**
@@ -30,6 +30,6 @@ class GetStatsBlockPlugin extends BlockPlugin {
    * enable and disable plugins.
    */
 	public function getDescription() {
-		return 'This plugin is an example created for a tutorial on how to create a plugin.';
+		return 'This plugin was created to help display informations from Journas at Universidade de São Paulo';
 	}
 }
