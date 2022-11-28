@@ -32,4 +32,10 @@ class GetStatsBlockPlugin extends BlockPlugin {
 	public function getDescription() {
 		return 'This plugin was created to help display informations from Journas at Universidade de São Paulo';
 	}
+
+  public function getContents($templateMgr, $request = null) {
+    $templateMgr->assign('revistas', 150);
+    $templateMgr->assign('artigos', 5000);
+    return parent::getContents($templateMgr, $request);
+  }
 }
