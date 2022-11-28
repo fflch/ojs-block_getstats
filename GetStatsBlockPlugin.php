@@ -34,8 +34,12 @@ class GetStatsBlockPlugin extends BlockPlugin {
 	}
 
   public function getContents($templateMgr, $request = null) {
-    $templateMgr->assign('revistas', 150);
-    $templateMgr->assign('artigos', 5000);
+    $x=100;
+    $templateMgr->assign('revistas', $x*100);
+    $templateMgr->assign('artigos', $x*5);
+    $templateMgr->assign('fasciculos', $x*44);
+    $templateMgr->assign('downloads', $x*2.5);
+    $templateMgr->assign('acessos', $x*4);
     return parent::getContents($templateMgr, $request);
   }
 }
