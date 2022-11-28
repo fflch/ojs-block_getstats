@@ -33,8 +33,24 @@ class GetStatsBlockPlugin extends BlockPlugin {
 		return 'This plugin was created to help display informations from Journas at Universidade de São Paulo';
 	}
 
+  /**
+   * Added to display block at general site
+   */
+  public function isSitePlugin() {
+    return true;
+  }
+
   public function getContents($templateMgr, $request = null) {
-    $x=100;
+    
+    $context = Application::get()->getRequest()->getContext();
+    if ($context) {
+      // When we are inside journal context
+      $x=5;
+    } else {
+      // When we are in site context
+      $x=12;
+    }
+    
     $templateMgr->assign('revistas', $x*100);
     $templateMgr->assign('artigos', $x*5);
     $templateMgr->assign('fasciculos', $x*44);
