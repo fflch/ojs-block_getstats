@@ -1,3 +1,4 @@
-# getstats
+Instalação
 
-PLugin parecido: https://github.com/ajnyga/mostread
+  cd plugins/blocks
+  git clone git remote add origin git@github.com:fflch/ojs-block_getstats.git additionalurl
