@@ -1,3 +1,6 @@
 <?php
-require_once('GetStatsBlockPlugin.php');
+
+require_once('GetStatsBlockPlugin.inc.php');
 return new GetStatsBlockPlugin();
+
+?> 
