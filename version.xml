@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
 <version>
-	<application>getstats</application>
+	<application>Getstats</application>
 	<type>plugins.blocks</type>
 	<release>1.0.0.0</release>
 	<date>2022-11-28</date>
